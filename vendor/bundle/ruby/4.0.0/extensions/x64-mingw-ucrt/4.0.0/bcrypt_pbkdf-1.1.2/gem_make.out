@@ -1,0 +1,23 @@
+current directory: C:/dev/simple_store/vendor/bundle/ruby/4.0.0/gems/bcrypt_pbkdf-1.1.2/ext/mri
+C:/Ruby40-x64/bin/ruby.exe extconf.rb
+creating Makefile
+
+current directory: C:/dev/simple_store/vendor/bundle/ruby/4.0.0/gems/bcrypt_pbkdf-1.1.2/ext/mri
+make -j13 DESTDIR\= sitearchdir\=./.gem.20260302-16360-xtrpuw sitelibdir\=./.gem.20260302-16360-xtrpuw clean
+
+current directory: C:/dev/simple_store/vendor/bundle/ruby/4.0.0/gems/bcrypt_pbkdf-1.1.2/ext/mri
+make -j13 DESTDIR\= sitearchdir\=./.gem.20260302-16360-xtrpuw sitelibdir\=./.gem.20260302-16360-xtrpuw
+generating bcrypt_pbkdf_ext-x64-mingw-ucrt.def
+compiling bcrypt_pbkdf.c
+compiling bcrypt_pbkdf_ext.c
+compiling blowfish.c
+compiling explicit_bzero.c
+compiling hash_sha512.c
+linking shared-object bcrypt_pbkdf_ext.so
+
+current directory: C:/dev/simple_store/vendor/bundle/ruby/4.0.0/gems/bcrypt_pbkdf-1.1.2/ext/mri
+make -j13 DESTDIR\= sitearchdir\=./.gem.20260302-16360-xtrpuw sitelibdir\=./.gem.20260302-16360-xtrpuw install
+/usr/bin/install -c -m 0755 bcrypt_pbkdf_ext.so ./.gem.20260302-16360-xtrpuw
+
+current directory: C:/dev/simple_store/vendor/bundle/ruby/4.0.0/gems/bcrypt_pbkdf-1.1.2/ext/mri
+make DESTDIR\= sitearchdir\=./.gem.20260302-16360-xtrpuw sitelibdir\=./.gem.20260302-16360-xtrpuw clean

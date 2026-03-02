@@ -1,0 +1,25 @@
+current directory: C:/dev/simple_store/vendor/bundle/ruby/4.0.0/gems/date-3.5.1/ext/date
+C:/Ruby40-x64/bin/ruby.exe extconf.rb
+checking for rb_category_warn()... yes
+checking for timezone in time.h with -Werror... no
+checking for altzone in time.h with -Werror... no
+creating Makefile
+
+current directory: C:/dev/simple_store/vendor/bundle/ruby/4.0.0/gems/date-3.5.1/ext/date
+make -j13 DESTDIR\= sitearchdir\=./.gem.20260302-16360-q01zq7 sitelibdir\=./.gem.20260302-16360-q01zq7 clean
+
+current directory: C:/dev/simple_store/vendor/bundle/ruby/4.0.0/gems/date-3.5.1/ext/date
+make -j13 DESTDIR\= sitearchdir\=./.gem.20260302-16360-q01zq7 sitelibdir\=./.gem.20260302-16360-q01zq7
+generating date_core-x64-mingw-ucrt.def
+compiling date_core.c
+compiling date_parse.c
+compiling date_strftime.c
+compiling date_strptime.c
+linking shared-object date_core.so
+
+current directory: C:/dev/simple_store/vendor/bundle/ruby/4.0.0/gems/date-3.5.1/ext/date
+make -j13 DESTDIR\= sitearchdir\=./.gem.20260302-16360-q01zq7 sitelibdir\=./.gem.20260302-16360-q01zq7 install
+/usr/bin/install -c -m 0755 date_core.so ./.gem.20260302-16360-q01zq7
+
+current directory: C:/dev/simple_store/vendor/bundle/ruby/4.0.0/gems/date-3.5.1/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20260302-16360-q01zq7 sitelibdir\=./.gem.20260302-16360-q01zq7 clean

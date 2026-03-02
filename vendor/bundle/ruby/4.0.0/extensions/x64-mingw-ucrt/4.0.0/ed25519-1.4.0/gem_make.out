@@ -1,0 +1,32 @@
+current directory: C:/dev/simple_store/vendor/bundle/ruby/4.0.0/gems/ed25519-1.4.0/ext/ed25519_ref10
+C:/Ruby40-x64/bin/ruby.exe extconf.rb
+checking for whether -Wall is accepted as CFLAGS... yes
+checking for whether -O3 is accepted as CFLAGS... yes
+checking for whether -pedantic is accepted as CFLAGS... yes
+checking for whether -std=c99 is accepted as CFLAGS... no
+creating Makefile
+
+current directory: C:/dev/simple_store/vendor/bundle/ruby/4.0.0/gems/ed25519-1.4.0/ext/ed25519_ref10
+make -j13 DESTDIR\= sitearchdir\=./.gem.20260302-16360-4me8g4 sitelibdir\=./.gem.20260302-16360-4me8g4 clean
+
+current directory: C:/dev/simple_store/vendor/bundle/ruby/4.0.0/gems/ed25519-1.4.0/ext/ed25519_ref10
+make -j13 DESTDIR\= sitearchdir\=./.gem.20260302-16360-4me8g4 sitelibdir\=./.gem.20260302-16360-4me8g4
+generating ed25519_ref10-x64-mingw-ucrt.def
+compiling ed25519_ref10.c
+compiling fe.c
+compiling ge.c
+compiling keypair.c
+compiling open.c
+compiling sc_muladd.c
+compiling sc_reduce.c
+compiling sha512.c
+compiling sign.c
+compiling verify.c
+linking shared-object ed25519_ref10.so
+
+current directory: C:/dev/simple_store/vendor/bundle/ruby/4.0.0/gems/ed25519-1.4.0/ext/ed25519_ref10
+make -j13 DESTDIR\= sitearchdir\=./.gem.20260302-16360-4me8g4 sitelibdir\=./.gem.20260302-16360-4me8g4 install
+/usr/bin/install -c -m 0755 ed25519_ref10.so ./.gem.20260302-16360-4me8g4
+
+current directory: C:/dev/simple_store/vendor/bundle/ruby/4.0.0/gems/ed25519-1.4.0/ext/ed25519_ref10
+make DESTDIR\= sitearchdir\=./.gem.20260302-16360-4me8g4 sitelibdir\=./.gem.20260302-16360-4me8g4 clean

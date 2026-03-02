@@ -1,0 +1,20 @@
+current directory: C:/dev/simple_store/vendor/bundle/ruby/4.0.0/gems/debug-1.11.1/ext/debug
+C:/Ruby40-x64/bin/ruby.exe extconf.rb
+creating Makefile
+
+current directory: C:/dev/simple_store/vendor/bundle/ruby/4.0.0/gems/debug-1.11.1/ext/debug
+make -j13 DESTDIR\= sitearchdir\=./.gem.20260302-16360-hqin4n sitelibdir\=./.gem.20260302-16360-hqin4n clean
+
+current directory: C:/dev/simple_store/vendor/bundle/ruby/4.0.0/gems/debug-1.11.1/ext/debug
+make -j13 DESTDIR\= sitearchdir\=./.gem.20260302-16360-hqin4n sitelibdir\=./.gem.20260302-16360-hqin4n
+generating debug-x64-mingw-ucrt.def
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: C:/dev/simple_store/vendor/bundle/ruby/4.0.0/gems/debug-1.11.1/ext/debug
+make -j13 DESTDIR\= sitearchdir\=./.gem.20260302-16360-hqin4n sitelibdir\=./.gem.20260302-16360-hqin4n install
+/usr/bin/install -c -m 0755 debug.so ./.gem.20260302-16360-hqin4n/debug
+
+current directory: C:/dev/simple_store/vendor/bundle/ruby/4.0.0/gems/debug-1.11.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20260302-16360-hqin4n sitelibdir\=./.gem.20260302-16360-hqin4n clean

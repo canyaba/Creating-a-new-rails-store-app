@@ -1,0 +1,20 @@
+current directory: C:/dev/simple_store/vendor/bundle/ruby/4.0.0/gems/erb-6.0.2/ext/erb/escape
+C:/Ruby40-x64/bin/ruby.exe extconf.rb
+checking for rb_ext_ractor_safe() in ruby.h... yes
+creating Makefile
+
+current directory: C:/dev/simple_store/vendor/bundle/ruby/4.0.0/gems/erb-6.0.2/ext/erb/escape
+make -j13 DESTDIR\= sitearchdir\=./.gem.20260302-16360-kzieox sitelibdir\=./.gem.20260302-16360-kzieox clean
+
+current directory: C:/dev/simple_store/vendor/bundle/ruby/4.0.0/gems/erb-6.0.2/ext/erb/escape
+make -j13 DESTDIR\= sitearchdir\=./.gem.20260302-16360-kzieox sitelibdir\=./.gem.20260302-16360-kzieox
+compiling escape.c
+generating escape-x64-mingw-ucrt.def
+linking shared-object erb/escape.so
+
+current directory: C:/dev/simple_store/vendor/bundle/ruby/4.0.0/gems/erb-6.0.2/ext/erb/escape
+make -j13 DESTDIR\= sitearchdir\=./.gem.20260302-16360-kzieox sitelibdir\=./.gem.20260302-16360-kzieox install
+/usr/bin/install -c -m 0755 escape.so ./.gem.20260302-16360-kzieox/erb
+
+current directory: C:/dev/simple_store/vendor/bundle/ruby/4.0.0/gems/erb-6.0.2/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20260302-16360-kzieox sitelibdir\=./.gem.20260302-16360-kzieox clean
