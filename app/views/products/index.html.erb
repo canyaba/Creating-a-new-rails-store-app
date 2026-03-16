@@ -3,5 +3,11 @@
 <h1>Products</h1>
 
 <% @products.each do |product| %>
+   <p><%= link_to product.title, product_path(product) %></p>
   <p><%= product.title %></p>
 <% end %>
+
+<h1><%= @product.title %></h1>
+<p>Price: <%= @product.price %></p>
+<p>Stock: <%= @product.stock_quantity %></p>
+<p>Description: <%= @product.description %></p>
