@@ -4,10 +4,11 @@
 
 <% @products.each do |product| %>
    <p><%= link_to product.title, product_path(product) %></p>
-  <p><%= product.title %></p>
+  <p><%= product.name%></p>
 <% end %>
 
 <h1><%= @product.title %></h1>
+<p>Category: <%= @product.category.name %></p>
 <p>Price: <%= @product.price %></p>
 <p>Stock: <%= @product.stock_quantity %></p>
 <p>Description: <%= @product.description %></p>
