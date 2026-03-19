@@ -1,15 +1,13 @@
-# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
 one:
-  title: MyString
-  description: MyText
+  title: Alpha Lamp
+  description: This product has a long description intended for the index truncation test case.
   price: 9.99
-  stock_quantity: 1
+  stock_quantity: 0
   category: one
 
 two:
-  title: MyString
-  description: MyText
-  price: 9.99
-  stock_quantity: 1
+  title: Beta Chair
+  description: Second fixture description for the product detail page.
+  price: 19.99
+  stock_quantity: 6
   category: two
