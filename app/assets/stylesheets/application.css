@@ -8,3 +8,354 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+:root {
+  --page-bg: #f5efe3;
+  --surface: #fffdf8;
+  --surface-strong: #f0e5d1;
+  --border: #d7c7aa;
+  --text: #2d2418;
+  --muted: #6a5a45;
+  --accent: #936639;
+  --accent-strong: #6f4518;
+  --success-bg: #dff3df;
+  --success-text: #235c2e;
+  --warning-bg: #fff1cc;
+  --warning-text: #8a5b00;
+  --danger-bg: #f8d7d3;
+  --danger-text: #8c2f2f;
+  --shadow: 0 18px 40px rgba(63, 41, 18, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.9), transparent 35%),
+    linear-gradient(180deg, #efe6d6 0%, var(--page-bg) 100%);
+  color: var(--text);
+}
+
+a {
+  color: var(--accent-strong);
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+.page-shell {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 2rem 0 3rem;
+}
+
+.products-page,
+.product-detail {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.page-header,
+.toolbar,
+.results-summary,
+.empty-state,
+.product-card,
+.product-detail {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+}
+
+.page-header,
+.toolbar,
+.results-summary,
+.empty-state {
+  padding: 1.25rem;
+}
+
+.page-header h1,
+.product-detail h1 {
+  margin: 0.25rem 0 0;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  line-height: 1;
+}
+
+.page-copy {
+  max-width: 42rem;
+  margin: 0.75rem 0 0;
+  color: var(--muted);
+}
+
+.eyebrow,
+.product-card__category {
+  margin: 0;
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.filters-form {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(0, 2fr) repeat(2, minmax(180px, 1fr)) auto;
+  align-items: end;
+}
+
+.field-group {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.field-group label {
+  font-weight: 700;
+}
+
+.field-group input,
+.field-group select,
+.toolbar-actions .button,
+.toolbar-actions input[type="submit"],
+.pagination .button,
+.pagination__page {
+  min-height: 2.75rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  font: inherit;
+}
+
+.field-group input,
+.field-group select {
+  width: 100%;
+  padding: 0.7rem 0.95rem;
+  background: #fff;
+  color: var(--text);
+}
+
+.toolbar-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.toolbar-actions input[type="submit"],
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  background: var(--accent-strong);
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button--secondary {
+  background: var(--surface-strong);
+  color: var(--text);
+}
+
+.results-summary {
+  color: var(--muted);
+}
+
+.results-summary p {
+  margin: 0;
+}
+
+.product-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.product-card {
+  padding: 1.25rem;
+}
+
+.product-card__header,
+.product-detail__header {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.product-card__header h2,
+.product-detail__description h2 {
+  margin: 0.25rem 0 0;
+}
+
+.product-card__header h2 {
+  font-size: 1.35rem;
+}
+
+.product-card__price,
+.product-detail__price {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.product-card__description,
+.product-detail__description p {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.product-meta,
+.product-detail__meta {
+  display: grid;
+  gap: 0.9rem;
+  margin: 0;
+}
+
+.product-meta {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--surface-strong);
+}
+
+.product-meta div,
+.product-detail__meta div {
+  display: grid;
+  gap: 0.3rem;
+}
+
+.product-meta dt,
+.product-detail__meta dt {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.product-meta dd,
+.product-detail__meta dd {
+  margin: 0;
+  font-weight: 700;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 0.25rem 0.7rem;
+  font-size: 0.9rem;
+}
+
+.status-badge--in {
+  background: var(--success-bg);
+  color: var(--success-text);
+}
+
+.status-badge--low {
+  background: var(--warning-bg);
+  color: var(--warning-text);
+}
+
+.status-badge--out {
+  background: var(--danger-bg);
+  color: var(--danger-text);
+}
+
+.pagination {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.pagination__pages {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.pagination__page {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.75rem;
+  padding: 0 0.85rem;
+  background: var(--surface);
+  color: var(--text);
+  text-decoration: none;
+}
+
+.pagination__page--current {
+  background: var(--accent-strong);
+  color: #fff;
+  border-color: var(--accent-strong);
+}
+
+.product-detail {
+  padding: 1.5rem;
+}
+
+.back-link {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.product-detail__meta {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  padding: 1rem 0;
+  border-top: 1px solid var(--surface-strong);
+  border-bottom: 1px solid var(--surface-strong);
+}
+
+.product-detail__description h2 {
+  font-size: 1.2rem;
+}
+
+.empty-state h2,
+.empty-state p {
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .filters-form {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .field-group--search,
+  .toolbar-actions {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 640px) {
+  .page-shell {
+    width: min(100% - 1rem, 100%);
+    padding: 1rem 0 2rem;
+  }
+
+  .page-header,
+  .toolbar,
+  .results-summary,
+  .empty-state,
+  .product-card,
+  .product-detail {
+    border-radius: 16px;
+  }
+
+  .product-card__header,
+  .product-detail__header,
+  .pagination {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .product-meta,
+  .product-detail__meta,
+  .filters-form {
+    grid-template-columns: 1fr;
+  }
+}

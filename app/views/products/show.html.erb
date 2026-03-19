@@ -1,5 +1,29 @@
-<h1><%= @product.title %></h1>
-<p>Category: <%= @product.category.name %></p>
-<p>Price: <%= @product.price %></p>
-<p>Stock: <%= @product.stock_quantity %></p>
-<p>Description: <%= @product.description %></p>
+<% content_for :title, @product.title %>
+
+<section class="product-detail">
+  <p><%= link_to "Back to products", products_path, class: "back-link" %></p>
+
+  <header class="product-detail__header">
+    <div>
+      <p class="eyebrow"><%= @product.category.name %></p>
+      <h1><%= @product.title %></h1>
+    </div>
+    <p class="product-detail__price"><%= number_to_currency(@product.price) %></p>
+  </header>
+
+  <dl class="product-detail__meta">
+    <div>
+      <dt>Stock quantity</dt>
+      <dd><%= @product.stock_quantity %></dd>
+    </div>
+    <div>
+      <dt>Availability</dt>
+      <dd><span class="<%= stock_status_badge_class(@product) %>"><%= @product.stock_status %></span></dd>
+    </div>
+  </dl>
+
+  <section class="product-detail__description">
+    <h2>Description</h2>
+    <p><%= @product.description %></p>
+  </section>
+</section>
